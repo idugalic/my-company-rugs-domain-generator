@@ -2,7 +2,7 @@
 
 
 This [Rug][rug] project contains a generator for a [Spring Boot][boot]
-[REST][rest] service project.
+command side aggregate API.
 
 [rug]: http://docs.atomist.com/
 
