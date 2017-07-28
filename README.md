@@ -22,9 +22,20 @@ install its dependencies with the following command.
 
 ```
 $ ( cd .atomist && npm install )
+$ rug install
 ```
 
-### NewSpringBootRestService
+You can install your archive loacally
+```
+$ rug install
+```
+or publish to remote repos
+
+```
+$ rug publish --id=YOUR_TOKEN
+```
+
+### NewCommandSideProject
 
 The NewCommandSideProject generator creates a new [Spring
 Boot][boot] project for the command side (aggregate).
