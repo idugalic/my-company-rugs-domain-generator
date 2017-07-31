@@ -11,7 +11,7 @@ import {
  * Sample TypeScript generator used by AddNewCommandSideProject.
  */
 @Generator("NewCommandSideProject", "Rug generator for a Spring Boot - Command Side project")
-@Tags("documentation")
+@Tags("spring", "command", "idugalic")
 export class NewCommandSideProject implements PopulateProject {
 
    @Parameter({
