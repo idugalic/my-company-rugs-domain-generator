@@ -4,7 +4,7 @@ import { PopulateProject } from "@atomist/rug/operations/ProjectGenerator";
 import { Pattern } from "@atomist/rug/operations/RugOperation";
 import {
     cleanChangeLog, cleanReadMe, movePackage, removeUnnecessaryFiles,
-    renameClass, updatePom,
+    renameClass, updateCircleCI, updatePom,
 } from "./RugGeneratorFunctions";
 
 /**
@@ -79,6 +79,7 @@ export class NewCommandSideProject implements PopulateProject {
         // cleanChangeLog(project, this.groupId);
         removeUnnecessaryFiles(project);
         updatePom(project, this.artifactId, this.groupId, this.version, this.description);
+        updateCircleCI(project, this.artifactId);
         movePackage(project, "com.idugalic.commandside.myaggregate", this.rootPackage);
     }
 }

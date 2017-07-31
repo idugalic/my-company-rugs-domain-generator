@@ -59,6 +59,18 @@ export function cleanChangeLog(project: Project, owner: string): void {
 }
 
 /**
+ * Update the .circleci/config.yml with new project information.
+ *
+ * @param project  Project whose README should be cleaned.
+ * @param artifactId   Maven artifact identifier.
+ * @param owner    GitHub owner of newly created project.
+ */
+export function updateCircleCI(project: Project, artifactId: string): void {
+    const circleCI: File = project.findFile(".circleci/config.yml");
+    circleCI.replace("my-company-blog-domain", artifactId);
+}
+
+/**
  * Remove files specific to this project.
  *
  * @param project  Project whose README should be cleaned.
