@@ -1,10 +1,8 @@
 # Atomist 'spring-rugs'
 
-[![Build Status](https://travis-ci.org/atomist/spring-rugs.svg?branch=master)](https://travis-ci.org/atomist/spring-rugs)
-[![Slack Status](https://join.atomist.com/badge.svg)](https://join.atomist.com)
 
 This [Rug][rug] project contains a generator for a [Spring Boot][boot]
-[REST][rest] service project.
+command side API.
 
 [rug]: http://docs.atomist.com/
 
@@ -24,9 +22,20 @@ install its dependencies with the following command.
 
 ```
 $ ( cd .atomist && npm install )
+$ rug install
 ```
 
-### NewSpringBootRestService
+You can install your archive loacally
+```
+$ rug install
+```
+or publish to remote repos
+
+```
+$ rug publish --id=YOUR_TOKEN
+```
+
+### NewCommandSideProject
 
 The NewCommandSideProject generator creates a new [Spring
 Boot][boot] project for the command side (aggregate).
