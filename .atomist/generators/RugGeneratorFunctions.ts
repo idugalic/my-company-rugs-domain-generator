@@ -31,35 +31,7 @@ import { PathExpressionEngine } from "@atomist/rug/tree/PathExpression";
  */
 export function cleanReadMe(project: Project, description: string, owner: string): void {
     const readMe: File = project.findFile("README.md");
-    readMe.setContent(`# ${project.name}
-
-This component processes commands. Commands are actions which change state in some way. The execution of these commands results in Events being generated which are persisted by Axon, and propagated out to other components (possibly on other VMs). In event-sourcing, events are the sole records in the system. They are used by the system to describe and re-build domain aggregates on demand, one event at a time.
-
-## Development
-
-This project is driven using [Maven][mvn].
-
-[mvn]: https://maven.apache.org/
-
-### Run/Install locally
- 
-Make sure that you have this libraries installed in your local maven repsoitory:
-
- - [my-company-common](https://github.com/ivans-innovation-lab/my-company-common)
-
-/`/`/`bash
-$ ./mvnw clean install
-/`/`/`
-
-### Run tests
-
-This component comes with some rudimentary tests as a good starting
-point for writing your own.  Use the following command to execute the
-tests using Maven:
-
-/`/`/`bash
-$ ./mvnw test
-/`/`/`
+    readMe.setContent(`test
 `);
 }
 
