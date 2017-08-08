@@ -67,7 +67,7 @@ export function cleanChangeLog(project: Project, owner: string): void {
  */
 export function updateCircleCI(project: Project, artifactId: string): void {
     const circleCI: File = project.findFile(".circleci/config.yml");
-    circleCI.replace("my-company-blog-domain", artifactId);
+    circleCI.replace("my-company-domain", artifactId);
 }
 
 /**

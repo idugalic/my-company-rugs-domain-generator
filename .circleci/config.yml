@@ -1,5 +1,5 @@
 defaults: &defaults
-  working_directory: /home/circleci/my-company-blog-domain
+  working_directory: /home/circleci/my-company-domain
   docker:
     - image: circleci/openjdk:8-jdk-browsers
     
@@ -12,7 +12,7 @@ jobs:
       - checkout
 
       - restore_cache:
-          key: my-company-blog-domain-{{ checksum "pom.xml" }}
+          key: my-company-domain-{{ checksum "pom.xml" }}
 
       - run: 
           name: Install maven artifact
@@ -31,7 +31,7 @@ jobs:
       - save_cache:
           paths:
             - ~/.m2
-          key: my-company-blog-domain-{{ checksum "pom.xml" }}
+          key: my-company-domain-{{ checksum "pom.xml" }}
       
       - run:
           name: Collecting test results
@@ -54,14 +54,13 @@ jobs:
      
       - store_artifacts:
           path: artifacts/
-          
-     # - persist_to_workspace:
-     #     root: artifacts/
-     #     paths:
-     #       - .
+
+notify:
+  webhooks:
+    - url: https://webhook.atomist.com/atomist/circle
  
 workflows:
   version: 2
-  my-company-blog-domain-workflow:
+  my-company-domain-workflow:
     jobs:
       - build
