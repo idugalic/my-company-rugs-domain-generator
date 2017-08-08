@@ -31,7 +31,7 @@ import { PathExpressionEngine } from "@atomist/rug/tree/PathExpression";
  */
 export function cleanReadMe(project: Project, description: string, owner: string): void {
     const readMe: File = project.findFile("README.md");
-    readMe.regexpReplace("^# Atomist 'spring-rugs'[\\S\\s]*\n## Spring Boot REST Service\n",
+    readMe.regexpReplace("^# my-company-rugs-domain-generator[\\S\\s]*\n## See the README in the generated project for further instructions.\n",
         `# ${project.name}
 
 This component processes commands. Commands are actions which change state in some way. 
