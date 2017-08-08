@@ -14,7 +14,7 @@ editor:
   parameters:
     - "archiveName": "command-side-project-generator"
     - "groupId": "my-company-rugs"
-    - "version": "0.1.1"
+    - "version": "0.1.2"
     - "generatorName": "NewCommandSideProject"
-    - "description": "Rug generator for a Spring Boot - Command Side project"
+    - "description": "Rug generator for a Spring component - Command Side project"
 
