@@ -22,7 +22,6 @@ install its dependencies with the following command.
 
 ```
 $ ( cd .atomist && npm install )
-$ rug install
 ```
 
 You can install your archive locally
