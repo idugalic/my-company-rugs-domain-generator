@@ -25,7 +25,7 @@ export class NewCommandSideProject implements PopulateProject {
         maxLength: 50,
         required: true,
     })
-    public aggragateName: string = "aggregate";
+    public aggregateName: string = "aggregate";
 
     @Parameter({
         displayName: "Version",
@@ -49,9 +49,8 @@ export class NewCommandSideProject implements PopulateProject {
     })
     public description: string = "Command Side - Aggregate";
 
-
     public populate(project: Project) {
-        const artifactId: string = "my-company-" + this.aggragateName + "-domain";
+        const artifactId: string = "my-company-" + this.aggregateName + "-domain";
         const  groupId: string = "com.idugalic";
 
         cleanReadMe(project, this.description, groupId);
@@ -59,7 +58,7 @@ export class NewCommandSideProject implements PopulateProject {
         // tslint:disable-next-line:max-line-length
         updatePom(project, artifactId, groupId, this.version, this.description);
         updateCircleCI(project, artifactId);
-        movePackage(project, "com.idugalic.commandside.myaggregate", groupId + ".commandside." + project.name);
+        movePackage(project, "com.idugalic.commandside.myaggregate", groupId + ".commandside." + this.aggregateName);
     }
 }
 
