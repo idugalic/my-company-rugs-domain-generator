@@ -53,7 +53,7 @@ To run this generator you must supply the following parameters.
 Name | Required | Default | Description
 -----|----------|---------|------------
 Project Name | Yes | |  A valid GitHub repository name.  It should be 21 characters or less to avoid truncating name when the its Slack channel is created.
-`aggregateName` | Yes | aggregate | Aggregate class name, e.g., "blog".
+`aggregateName` | Yes | Aggregate | Aggregate class name, e.g., "Blog".
 `version` | No | 0.1.0-SNAPSHOT | [Semantic version][semver] of the project.
 `description` | No | My new project | A brief description of the project.
 
