@@ -37,7 +37,7 @@
     }
   },
   "name": "@my-company-rugs/command-side-project-generator",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "author": "my-company-rugs",
   "description": "Atomist Rugs from my-company-rugs/command-side-project-generator",
   "repository": {

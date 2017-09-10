@@ -53,11 +53,9 @@ To run this generator you must supply the following parameters.
 Name | Required | Default | Description
 -----|----------|---------|------------
 Project Name | Yes | |  A valid GitHub repository name.  It should be 21 characters or less to avoid truncating name when the its Slack channel is created.
-`artifactId` | No | myartifact | Maven artifact ID, e.g., "fiddle-riddle".
-`groupId` | No | mygroup |  Maven group ID, e.g., "com.pany.project".
+`aggregateName` | Yes | aggregate | Aggregate class name, e.g., "blog".
 `version` | No | 0.1.0-SNAPSHOT | [Semantic version][semver] of the project.
 `description` | No | My new project | A brief description of the project.
-`rootPackage` | No | com.myorg | The root package for the generated service class.
 
 [semver]: http://semver.org
 
