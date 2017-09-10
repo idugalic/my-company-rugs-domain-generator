@@ -67,7 +67,7 @@ Run it as follows:
 $ cd parent/directory
 $ rug generate my-company-rugs:command-side-project-generator:NewCommandSideProject \
     my-company-customer-domain \
-    aggregateName=my-company-customer-domain \
+    aggregateName=Customer \
     version=0.1.0-SNAPSHOT \
     description="Command Side - Customer"
 ```
@@ -76,7 +76,7 @@ Note the first parameter, the project name, is different in that you
 do not need to supply the name of the parameter, just the value.  This
 is because the project name parameter is required for all generators.
 This will create a directory named `my-company-customer-domain` and populate it
-with a working Spring Boot REST service.  If you are happy with the
+with a working aggregate.  If you are happy with the
 change, commit the changes.
 
 ```
