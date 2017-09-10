@@ -67,11 +67,9 @@ Run it as follows:
 $ cd parent/directory
 $ rug generate my-company-rugs:command-side-project-generator:NewCommandSideProject \
     my-company-customer-domain \
-    artifactId=my-company-customer-domain \
-    groupId=com.idugalic \
+    aggregateName=my-company-customer-domain \
     version=0.1.0-SNAPSHOT \
-    description="Spring Boot - Command Side - Customer" \
-    rootPackage=com.idugalic.commandside.customer
+    description="Command Side - Customer"
 ```
 
 Note the first parameter, the project name, is different in that you
