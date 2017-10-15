@@ -1,4 +1,4 @@
-# my-company-rugs-domain-generator
+# [projects](http://ivans-innovation-lab.github.io/projects)/my-company-rugs-domain-generator
 
 
 This [Rug][rug] project contains a generator for a [Spring Boot][boot]
